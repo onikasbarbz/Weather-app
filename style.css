@@ -1,0 +1,95 @@
+*{
+  margin: 0;
+  padding: 0px;
+  font-family:'Courier New', Courier, monospace;
+  box-sizing: border-box;
+
+}
+body{
+  background-attachment: fixed;
+  background-image: url("https://img.freepik.com/free-vector/sky-background-video-conferencing_23-2148639325.jpg?w=1060&t=st=1704351847~exp=1704352447~hmac=e65ea7487b79822267166744a244eecbe65f793e00f6072de4b796658e85a8df");
+  background-size: cover;
+}
+.modal{
+  display: flex;
+  flex-direction: column;
+  align-content: space-between;
+  justify-content: space-between;
+}
+#weatherList{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+#weatherList li{
+list-style: none;
+width:35%;
+background: linear-gradient(125deg, #85ebff,#e798e5 );
+color: #fff;
+margin:50px auto 0;
+border-radius: 20px;
+text-align: center;
+color: black;
+font-size: 15px;
+font-weight: bold;
+}
+#weatherList li img{
+width:150px;
+}
+.foot{
+  opacity: 0.9;
+  background: linear-gradient(125deg, #85ebff,#e798e5 );
+  text-align: center;
+  color: white;
+  padding: 15px;
+  font-size: 10px;
+  border-radius: 2px;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+#weatherList:last-child{
+  margin-bottom: 90px;
+}
+.search{
+  width:30%;
+  display:flex;
+  align-items: center;
+  justify-tracks: space-between;
+}
+
+.search input{
+  border: 0;
+  outline: 0;
+  background: #ebfffc;
+  padding: 10px 25px;
+  height: 60px;
+  border-radius: 30px;
+  flex:1;
+  margin-right: 16px;
+  font-size: 18px;
+}
+
+.search button{
+  border:0;
+  outline:0;
+  background: #ebfffc;
+  border-radius:50%;
+  width: 60px;
+  height: 60px;
+  cursor: pointer;
+}
+
+.search button img {
+  transform: scale(1.8);
+  object-fit: contain;
+}
+
+.back-button{
+  font-size: large ;
+  text-decoration: none;
+  padding: 15px;
+  background-color: #a4dce7;
+  border-radius: 20px;
+  margin-left: 20px;
+}
